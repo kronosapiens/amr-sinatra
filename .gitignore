@@ -1,0 +1,5 @@
+coverage
+tmp
+db/*.db
+db/*.sqlite
+*.DS_Store
