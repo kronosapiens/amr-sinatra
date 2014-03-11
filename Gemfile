@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# gem 'aftermarket_research'
+gem 'aftermarket_research'
 gem 'sinatra'
 gem 'rspec'
 gem 'pry'

@@ -1,1 +1,24 @@
 <h1>Welcome to AfterMarket Research!</h1>
+
+<h3>What would you like to search for?</h3>
+<form action="/search" method="POST">
+  <label>Query
+    <input type="text" name="search[search_query]" placeholder="Search Query">
+  </label>
+  <br>
+  <label>Minimum Price
+    <input type="text" name="search[min_price]" value="0">
+  </label>
+  <br>
+  <label>Maximum Price
+    <input type="text" name="search[max_price]" value="2000">
+  </label>
+  <br>
+  <select name="search[keyword]">
+    <% @locations_hash.keys.each do |key| %>
+    <option value="<%= key %>"><%= @locations_hash[key] %></option>
+    <% end %>
+  </select>
+  <br>
+  <input type="submit" value="Submit"
+</form>
