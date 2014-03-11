@@ -11,9 +11,7 @@ class ApplicationController < Sinatra::Base
   post '/search' do
     @driver = Driver.new(params[:search])
     @driver.prepare_search
-    binding.pry
     @driver.run_search
-    binding.pry
     if !@driver.num_array.empty?
       erb :results
     else

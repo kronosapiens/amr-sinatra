@@ -1,0 +1,8 @@
+<h3>Analysis Complete</h3>
+<br>
+<h4>Based on <%= @driver.num_array.length %> craigslist listings matching "<%= @driver.query_hash[:search_query] %>":</h4>
+<h3>The mean price for your search is <%= @driver.mean %></h3>
+<h3>The median price for your search is <%= @driver.median %></h3>
+<h3>The mode price for your search is <%= @driver.mode %></h3>
+<br>
+<h4><a href="<%= @driver.url %>">See Your Results</a></h4>
