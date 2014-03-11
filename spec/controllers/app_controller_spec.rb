@@ -31,7 +31,7 @@ describe 'app_controller' do
       }
     end
 
-    xit 'shows search results' do
+    it 'shows search results' do
       expect(last_response.body).to include("Analysis Complete")
     end
   end
