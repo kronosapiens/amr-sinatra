@@ -2,23 +2,26 @@
 
 <h3>What would you like to search for?</h3>
 <form action="/search" method="POST">
-  <label>Query
-    <input type="text" name="search[search_query]" placeholder="Search Query">
+  <label>Query: 
+    <input type="text" name="search[search_query]" placeholder="query">
   </label>
   <br>
-  <label>Minimum Price
-    <input type="text" name="search[min_price]" value="0">
+  <label>Minimum Price: 
+    <input type="text" name="search[min_price]" placeholder="min">
   </label>
   <br>
-  <label>Maximum Price
-    <input type="text" name="search[max_price]" value="2000">
+  <label>Maximum Price: 
+    <input type="text" name="search[max_price]" placeholder="max">
   </label>
   <br>
+  <label>Location: 
   <select name="search[keyword]">
     <% @locations_hash.keys.each do |key| %>
     <option value="<%= key %>"><%= @locations_hash[key] %></option>
     <% end %>
   </select>
+  </label>
   <br>
-  <input type="submit" value="Submit" />
+  <br>
+  <input type="submit" value="RESEARCH" />
 </form>
