@@ -11,12 +11,14 @@
    ========================================================================== */
 
 @import url(http://fonts.googleapis.com/css?family=Alef);
+@import url(http://fonts.googleapis.com/css?family=Merriweather+Sans:400,800);
 
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-    font-family: 'Alef', sans-serif;
+    /*font-family: 'Alef', sans-serif;*/
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 /*
@@ -95,7 +97,11 @@ textarea {
    ========================================================================== */
 
 body {
-  background-color:#b0c4de;
+  /*background-color: #b3d4fc;*/
+  background-image:url("/images/green_dust_scratch.png");
+  /*background-image:url("/images/bright_squares.png");*/
+  /*background-image:url("/images/old_mathematics.png");*/
+  /*background-image:url("/images/xv.png");*/
 }
 
 #search_box {
