@@ -12,7 +12,7 @@ describe 'app_controller' do
     end
 
     it 'loads index.erb correctly' do
-      expect(last_response.body).to include("Welcome to AfterMarket Research")
+      expect(last_response.body).to include("What would you like to research?")
     end
 
     it 'loads index.erb correctly' do
