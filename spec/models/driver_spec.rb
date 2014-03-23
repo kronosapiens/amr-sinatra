@@ -24,6 +24,12 @@ describe "Driver" do
     it 'knows the right query' do
       expect(driver.query.search_query).to eq("bicycle")
     end
+
+    it 'can create a Results struct that knows the search query' do
+      driver.prepare_results
+      expect(driver.results.search_query).to eq("bicycle")
+    end
+
   end
 
 end
