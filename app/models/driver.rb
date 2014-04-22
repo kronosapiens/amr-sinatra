@@ -2,7 +2,7 @@ class Driver
 
   attr_accessor :query_hash, :query, :scraper, :results
 
-  Results = Struct.new(:mean, :median, :mode, :num_results, :url, :search_query)
+  Results = Struct.new(:mean, :median, :mode, :num_array, :url, :search_query)
 
   def initialize(query_hash)
     @query_hash = query_hash
@@ -21,11 +21,11 @@ class Driver
   def run_search
     prepare_results
     scraper.scrape
-    @results.num_results = scraper.number_extraction.length
+    @results.num_array = scraper.number_extraction
     @results.url = scraper.encoded_url
 
-    if @results.num_results != 0
-      analyzer = Analyzer.new(num_array)
+    if !@results.num_array.empty?
+      analyzer = Analyzer.new(@results.num_array)
       @results.mean = analyzer.mean
       @results.median = analyzer.median
       @results.mode = analyzer.mode

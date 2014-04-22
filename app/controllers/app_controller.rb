@@ -12,7 +12,8 @@ class ApplicationController < Sinatra::Base
     @driver = Driver.new(params[:search])
     @driver.prepare_search
     @driver.run_search
-    if @driver.num_array.empty?
+    @results = @driver.results
+    if @results.num_array.empty?
       erb :noresults
     else
       erb :results
