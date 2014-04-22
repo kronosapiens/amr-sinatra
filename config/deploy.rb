@@ -1,7 +1,7 @@
 require 'bundler/capistrano'
 
 set :application, "amr_sinatra"
-set :repository,  "amr_sinatra"
+set :repository,  "http://www.github.com/kronosapiens/amr_sinatra"
 
 set :user, "kronosapiens"
 set :deploy_to, "/home/kronosapiens/amr_sinatra"
