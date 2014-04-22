@@ -5,7 +5,7 @@ set :repository,  "http://www.github.com/kronosapiens/amr_sinatra"
 
 set :user, "kronosapiens"
 set :deploy_to, "/home/kronosapiens/amr_sinatra"
-set :use_sudo, true
+set :use_sudo, false
 
  set :scm, :git # You can set :scm explicitly or Capistrano will make an intelligent guess based on known version control directory names
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
