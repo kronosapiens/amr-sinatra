@@ -13,6 +13,8 @@ gem 'thin'
 gem 'require_all' # if you pass this gem a directory, you will load everything inside
 gem 'rack-test'
 
+#Using Coveralls for test coverage reporting
+gem 'coveralls', require: false
 
 # gem 'activerecord', :require => 'active_record'
 # gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
